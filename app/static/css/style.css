@@ -1,0 +1,94 @@
+*{
+  padding: 0px;
+  margin: 0px;
+
+}
+
+body {
+  font: 20px Montserrat, sans-serif;
+  line-height: 1.8;
+  color: #f5f6f7;
+}
+p {font-size: 16px;
+padding-left: 5px;}
+
+
+.container-fluid {
+padding: 45px;
+  background-color: #1abc9c; /* Green */
+  color: #ffffff;
+}
+
+.container-fluid-result{
+  padding: 45px;
+  background-color: #1abc9c; /* Green */
+  color: #ffffff;
+  min-height: 65vh;
+}
+.navbar {
+  padding: 8px;
+  font-size: 18px;
+  background-color: #F5F6F7;
+  color: #2f2f2f;
+  border-radius: 0;
+  margin-bottom: 0;
+
+  letter-spacing: 5px;
+}
+
+.footer{
+  padding-top: 30px;
+  padding-bottom: 15px;
+  background-color: #2f2f2f; /* Black Gray */
+  color: #fff;
+  width: 100%;
+}
+
+
+.input_area{
+  background-color: #F5F6F7;
+  color: #2f2f2f;
+  margin-top:  20px;
+  margin-bottom: 20px;
+  width:45%;
+  height:300px;
+}
+
+ .author img {
+width: 25px;
+height: 25px;
+margin: 15px;
+
+
+}
+#btn{
+padding: 4px;
+margin:4px;
+background-color: #F5F6F7;
+color: #2f2f2f;
+font-family: monospace;
+}
+#tryagain{
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  border-style: solid;
+}
+#developed{
+  font-family: monospace;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+.input_area{
+  width:100%;
+}
+
+.container-fluid-result{
+  min-height: 60vh;
+}
+
+}

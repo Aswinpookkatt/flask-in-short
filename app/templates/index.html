@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>summarizer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+<h2><center>In Short</center></h2>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid">
+<p>This tool lets you summarize the paragraph or article with just one click.</p>
+<br>
+
+      <form action = "/result" id="sumform" method = "POST">
+  				<p>Enter the paragraph you wish to summarize:</p>
+  				<textarea class="input_area" maxlength = "50000" name = "input_text" id = "input_text" style="" value = "{{request.form['input_text']}}"  required></textarea>
+  				<p>Enter the number of sentences you wanted : </p>
+  				<p>
+  					<input   type="number" name = "num_sentences" pattern =
+  					"[0-9]+" min = "1" max = "100" required >
+  				</p>
+  				<p>
+  					<input type="submit"  value="Submit" id="btn">
+  				</p>
+
+  			</form>
+</div>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="author">
+    <h5><p>Contact Developer</p></h5>
+<center>
+  <a href="https://github.com/Aswinpookkatt" target="_blank"> <img src="{{url_for('static', filename='img/github.png')}}" alt="icon"></a>
+  <a href="https://www.linkedin.com/in/aswinpookkatt/" target="_blank"> <img src="{{url_for('static', filename='img/linkedin.png')}}" alt="icon"></a>
+  <a href="mailto:aswin.p1800@gmail.com" target="_blank"> <img src="{{url_for('static', filename='img/mail.png')}}" alt="icon"></a>
+</center>
+
+
+  </div>
+
+<center id="developed">All Rights Reserved</center>
+</footer>
+
+</body>
+</html>

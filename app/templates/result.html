@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>summarizer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+  <h2><center>In Short</center></h2>
+  </nav>
+
+  <!-- First Container -->
+  <div class="container-fluid-result">
+
+
+    <h4>Summazrized Text: </h4>
+    <textbox name="output_text" id="output_text" maxlength="50000" style="width:600px;
+    height:250px">
+      {% for sentence in output_summary %}
+      <p>{{ sentence }} </p>
+      {% endfor %}
+    </textbox>
+    <br>
+    <br>
+  <center><a id="tryagain" href="/index">Try again</a></center>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="author">
+        <h5><p>Contact Developer</p></h5>
+  <center>
+  <a href="https://github.com/Aswinpookkatt" target="_blank"> <img src="{{url_for('static', filename='img/github.png')}}" alt="icon"></a>
+  <a href="https://www.linkedin.com/in/aswinpookkatt/" target="_blank"> <img src="{{url_for('static', filename='img/linkedin.png')}}" alt="icon"></a>
+  <a href="mailto:aswin.p1800@gmail.com" target="_blank"> <img src="{{url_for('static', filename='img/mail.png')}}" alt="icon"></a>
+  </center>
+
+
+    </div>
+
+  <center id="developed">All Rights Reserved</center>
+  </footer>
+
+  </body>
+  </html>
